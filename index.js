@@ -11,7 +11,7 @@ const puppeteer = require('puppeteer');
 
     await page.goto(webUrl, {waitUntil:"networkidle2"});
 
-    console.log("Go to : " + webUrl);
+    console.log(webUrl + " has loaded. ");
 
     let data = await page.evaluate(()=>{
 
